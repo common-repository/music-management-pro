@@ -1,0 +1,531 @@
+/** ARTIST LIST */
+.mmp_artist_list .mmp_image {
+    width: 100px;
+    height: 100px;
+    background-color: #f2f2f4;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    border-radius: 6px;
+}
+
+.mmp_artist_list .mmp_title {
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #3b3b3b;
+    text-transform: capitalize;
+    padding-bottom: 6px;
+    max-width: 280px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.mmp_artist_list .mmp_music_type {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #cccccc;
+    text-transform: capitalize;
+}
+
+.mmp_artist_list .mmp_box {
+    display: inline-block;
+    margin-right: 42px;
+    vertical-align: middle;
+}
+
+.mmp_artist_list .mmp_box:last-child {
+    margin: 0 !important;
+}
+
+/** Statistic */
+.statistic-option {
+    display: inline-block;
+    min-width: 100px;
+    margin-right: 42px;
+    vertical-align: middle;
+    font-family: Roboto, sans-serif;
+    color: #3b3b3b;
+}
+
+.statistic-option .number {
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.statistic-option span {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 6px;
+    color: #CCCCCC;
+    text-transform: capitalize;
+}
+
+.mmp_artist_list .mmp_status {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #e63f3f;
+    text-transform: capitalize;
+    border: 1px solid #e63f3f;
+    border-radius: 999px;
+    padding: 0 12px;
+    margin-bottom: 6px;
+}
+
+.mmp_artist_list .mmp_status.active {
+    color: #3fe66f;
+    border-color: #3fe66f;
+}
+
+.mmp_artist_list .mmp_status.suspend {
+    color: #e6bc3f;
+    border-color: #e6bc3f;
+}
+
+.mmp_artist_list .mmp_date {
+    font-size: 12px;
+    font-weight: 400;
+    color: #cccccc;
+}
+
+/** Music preview */
+.mmp_music_preview {
+    display: flex;
+    padding: 16px;
+}
+
+.mmp_music_preview .image {
+    flex: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+    background-color: #f2f2f4;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.mmp_music_preview .content {
+    padding-left: 8px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #CCCCCC;
+}
+
+.mmp_music_preview .title {
+    font-weight: 600;
+    font-size: 14px;
+    color: #3b3b3b;
+    margin-bottom: 3px;
+}
+
+.mmp_music_preview audio {
+    height: 38px;
+    margin-top: 3px;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/** Buy plugin banner */
+.mmp_buy_plugin_banner {
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 30px;
+    line-height: 0;
+}
+
+.mmp_buy_plugin_banner a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.mmp_buy_plugin_banner img {
+    width: 100%;
+}
+
+/** Author plugins */
+.mmp_my_plugin {
+    display: flex;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.mmp_my_plugin .fx.img {
+    flex: none;
+}
+
+.mmp_my_plugin .fx.img img {
+    max-width: 450px;
+}
+
+.mmp_my_plugin .fx.content {
+    padding-left: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #3b3b3b;
+}
+
+.mmp_my_plugin table {
+    width: 100%;
+}
+
+.mmp_my_plugin table td {
+    padding: 0 10px 10px 0;
+}
+
+.mmp_my_plugin table td:first-child {
+    width: 1px;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.mmp_author_plugins .item {
+    float: left;
+    width: 340px;
+    background-color: #fff;
+    border-radius: 6px;
+    margin: 0 10px 10px 0;
+    overflow: hidden;
+}
+
+.mmp_author_plugins .item img {
+    width: 100%;
+}
+
+.mmp_author_plugins .item-content {
+    padding: 6px 12px;
+}
+
+.mmp_author_plugins .meta > div {
+    display: inline-block;
+    margin: 0 8px 0 0;
+    font-size: 12px;
+    padding: 6px 0;
+}
+
+.mmp_author_plugins .button {
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    background-color: rgb(70, 113, 244) !important;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    color: #fff !important;
+    text-transform: capitalize;
+    border-radius: 6px;
+    border: none;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.mmp-author-heading {
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3b3b3b;
+    margin-bottom: 16px;
+}
+
+/** Dashboard */
+.mmp-dashboard-analyze {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.mmp-dashboard-analyze-item {
+    float: left;
+    width: 33.333333%;
+    padding: 15px;
+}
+
+.mmp-dashboard-analyze-item-inner {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 0 20px;
+}
+
+.mmp-dashboard-analyze-item-inner > .header {
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding-top: 16px;
+}
+
+.mmp-dashboard-analyze-item-inner > .empty {
+    padding: 22px 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.mmp-dashboard-analyze-am-item {
+    display: flex;
+    align-items: center;
+    padding: 22px 0;
+    border-bottom: 1px solid #ededed;
+}
+
+.mmp-dashboard-analyze-am-item:last-child {
+    border: none;
+}
+
+.mmp-dashboard-analyze-am-item .image-area {
+    flex: none;
+}
+
+.mmp-dashboard-analyze-am-item .image {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    border-radius: 6px;
+    background-color: #f1f1f1;
+    transform: rotate(20deg);
+}
+
+.mmp-dashboard-analyze-am-item .image-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    transform: rotate(-20deg);
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.mmp-dashboard-analyze-am-item .content-area {
+    flex: auto;
+    padding: 0 10px 0 20px;
+}
+
+.mmp-dashboard-analyze-am-item .title {
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: #3b3b3b;
+}
+
+.mmp-dashboard-analyze-am-item .meta {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #3b3b3b;
+}
+
+.mmp-dashboard-analyze-am-item .meta > div {
+    display: inline-block;
+    margin: 8px 16px 0 0;
+}
+
+.mmp-dashboard-analyze-n-item {
+    padding: 22px 0;
+    border-bottom: 1px solid #ededed;
+}
+
+.mmp-dashboard-analyze-n-item:last-child {
+    border: none;
+}
+
+.mmp-dashboard-analyze-n-item .title {
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: #3b3b3b;
+}
+
+.mmp-dashboard-analyze-n-item .meta {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #3b3b3b;
+}
+
+.mmp-dashboard-analyze-n-item .meta > div {
+    display: inline-block;
+    margin: 8px 16px 0 0;
+}
+
+.mmp-dashboard-analyze-n-item .description {
+    font-weight: 500;
+    font-size: 13px;
+    padding-top: 14px;
+}
+
+/** Like And Follower */
+.mmp-see-like-follow {
+    padding: 16px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.mmp-see-like-follow .item {
+    margin-bottom: 16px;
+}
+
+.mmp-see-like-follow .item:last-child {
+    margin: 0;
+}
+
+.mmp-see-like-follow .item img {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.mmp-see-like-follow .item span {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #ccc;
+}
+
+.mmp-see-like-follow .item span span {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+/**
+ * TODO Responsive 1235
+ */
+@media screen and (max-width: 1235px) {
+
+    .mmp-dashboard-analyze-item {
+        width: 50%;
+    }
+
+}
+
+/**
+ * TODO Responsive 1160
+ */
+@media screen and (max-width: 1160px) {
+
+    .mmp-support {
+        display: block;
+        height: auto;
+    }
+
+    .mmp-support-form {
+        width: 100%;
+    }
+
+    .mmp-support-answer {
+        max-height: 256px;
+    }
+
+}
+
+/**
+ * TODO Responsive 1040
+ */
+@media screen and (max-width: 1040px) {
+
+    .mmp-dashboard-analyze-item {
+        width: 100%;
+    }
+
+    .statistic-option {
+        display: none;
+    }
+
+    .mmp_page_header {
+        display: block;
+    }
+
+    .mmp_page_header .title {
+        margin-bottom: 10px;
+    }
+
+    .mmp_page_header .controllers {
+        display: flex;
+    }
+
+    .mmp_page_header .mmp_search {
+        flex: auto;
+        margin-left: 0;
+        margin-right: 26px;
+    }
+
+    .mmp_page_header .mmp_search input {
+        width: 100%;
+    }
+
+}
+
+/**
+ * TODO Responsive 960
+ */
+@media screen and (max-width: 960px) {
+
+    .mmp_form {
+        left: 116px;
+    }
+
+    .mmp_lite_box {
+        left: calc(50% + 40px);
+    }
+
+    .mmp_overlay {
+        left: 36px;
+    }
+
+}
+
+/**
+ * TODO Responsive 782
+ */
+@media screen and (max-width: 782px) {
+
+    #wpcontent {
+        padding-right: 10px !important;
+    }
+
+    .mmp_form {
+        left: 80px;
+    }
+
+    .mmp_lite_box {
+        left: calc(50% + 0px);
+    }
+
+    .mmp_overlay {
+        left: 0;
+    }
+
+}
+
+/**
+ * TODO Responsive 620
+ */
+@media screen and (max-width: 620px) {
+
+    .mmp_table th:nth-child(3),
+    .mmp_table td:nth-child(3) {
+        display: none;
+    }
+
+}

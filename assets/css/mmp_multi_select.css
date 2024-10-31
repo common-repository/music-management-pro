@@ -1,0 +1,199 @@
+.mmp_multi_select {
+    position: relative;
+    width: 100%;
+    height: 42px;
+    padding: 0 4px;
+    border-radius: 6px;
+    border: 1px solid #e7e9ed !important;
+    font-size: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.mmp_multi_select_option {
+    position: relative;
+    max-width: calc(100% - 16px);
+    height: 32px;
+    background-color: #f2f2f4;
+    display: inline-block;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    border-radius: 999px;
+    padding: 7px 12px;
+    margin: 4px 4px 0 0;
+    z-index: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mmp_multi_select_option i {
+    cursor: pointer;
+}
+
+.mmp_multi_select .placeholder {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 14px;
+    color: #e7e9ed;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.mmp_multi_select_box {
+    position: fixed;
+    top: 50%;
+    left: calc(50% + 80px);
+    width: 400px;
+    height: 400px;
+    max-width: calc(100% - 40px);
+    max-height: calc(100% - 40px);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    transition: all 0.18s ease-in;
+    z-index: 99999;
+}
+
+.mmp_multi_select_overlay {
+    position: fixed;
+    top: 0;
+    left: 160px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.12);
+    transition: all 0.18s ease-in;
+    opacity: 0;
+    z-index: 99998;
+}
+
+.mmp_multi_select_box.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.mmp_multi_select_overlay.active {
+    opacity: 1;
+}
+
+.folded .mmp_multi_select_overlay {
+    left: 36px;
+}
+
+.folded .mmp_multi_select_box {
+    left: calc(50% + 18px);
+}
+
+.mmp_multi_select_controller {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.08);
+}
+
+.mmp_multi_select_save,
+.mmp_multi_select_cancel {
+    display: inline-block;
+    width: 160px;
+    height: 42px;
+    line-height: 42px;
+    background-color: rgb(70, 113, 244);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.mmp_multi_select_cancel {
+    background: #f6f6f6;
+    color: #222;
+}
+
+.mmp_multi_select_search {
+    width: 100%;
+    height: 56px;
+    border: none !important;
+    outline: none !important;
+    box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.08) !important;
+    border-radius: 0 !important;
+    text-transform: capitalize;
+    font-family: Roboto, sans-serif;
+    padding: 0 18px !important;
+    color: #3b3b3b !important;
+}
+
+.mmp_multi_select_content {
+    position: absolute;
+    top: 56px;
+    right: 0;
+    bottom: 72px;
+    left: 0;
+    overflow-y: auto;
+}
+
+.mmp_multi_select_content .mmp_multi_select_option {
+    margin: 10px 0 0 10px;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    user-select: none;
+}
+
+.mmp_multi_select_content .mmp_multi_select_option.active {
+    background-color: rgb(70, 113, 244);
+    color: #fff;
+}
+
+.mmp_multi_select_img {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+    margin: -5px 6px 0 -10px;
+    vertical-align: middle;
+}
+
+/**
+ * TODO Responsive 960
+ */
+@media screen and (max-width: 960px) {
+
+    .mmp_multi_select_box {
+        left: calc(50% + 40px)
+    }
+
+    .mmp_multi_select_overlay {
+        left: 36px;
+    }
+
+}
+
+/**
+ * TODO Responsive 782
+ */
+@media screen and (max-width: 782px) {
+
+    .mmp_multi_select_box {
+        left: calc(50% + 0px)
+    }
+
+    .mmp_multi_select_overlay {
+        left: 0;
+    }
+
+}
